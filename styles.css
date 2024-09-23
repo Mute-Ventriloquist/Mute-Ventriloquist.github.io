@@ -1,33 +1,95 @@
+/* Iteration #4: Add subtle highlight/box to the sidebar links */
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+  display: flex;
+  height: 100vh;
 }
 
-header {
-    text-align: center;
-    padding: 50px;
+.container {
+  display: flex;
+  width: 100%;
 }
 
-h1 {
-    margin: 0;
-    font-size: 2.5em;
+.sidebar {
+  background-color: #2d6cc3;
+  color: white;
+  padding: 30px 20px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 15px;
+  display: block;
+  padding: 10px 15px; /* Adding padding for a boxed effect */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #1b4f91; /* Slightly darker shade on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a light shadow */
+  text-decoration: none;
+}
+
+.main-content {
+  margin-left: 220px;
+  padding: 20px;
+  width: calc(100% - 220px);
+  max-width: 1200px;
+}
+
+.main-content img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 h2 {
-    color: #333;
+  font-size: 22px;
+  color: #2d6cc3;
 }
 
-main {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
+p {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #eee;
+h2, ul {
+  margin-bottom: 20px;
+}
+
+ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+a.publication {
+  color: #2d6cc3;
+  text-decoration: none;
+}
+
+a.publication:hover {
+  text-decoration: underline;
 }
