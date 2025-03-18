@@ -109,7 +109,7 @@ a.publication:hover {
   justify-content: center; /* Horizontally center the icons */
   width: 10px; /* Set a fixed width for each icon */
   height: 10px; /* Set a fixed height for each icon */
-  border-radius: 50%; /* Make the icons circular */
+  border-radius: 30%; /* Make the icons circular */
   background-color: #1b4f91; /* Add a background color for better visibility */
   color: white; /* Ensure the icons are visible */
   transition: background-color 0.3s ease;
