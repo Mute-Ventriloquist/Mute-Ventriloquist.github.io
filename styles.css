@@ -118,3 +118,92 @@ a.publication:hover {
 .social-links a:hover {
   background-color: #2d6cc3; /* Change background color on hover */
 }
+
+.patent-list {
+  list-style: none;
+  padding: 0;
+}
+
+.patent-list li {
+  margin-bottom: 20px;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list li {
+  margin-bottom: 20px;
+}
+
+.misc-list {
+  list-style: none;
+  padding: 0;
+}
+
+.misc-list li {
+  margin-bottom: 20px;
+}
+
+.dropdown-btn {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.dropdown-content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.dropdown-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.dropdown-content a {
+  display: block;
+  margin-top: 10px;
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+  transform: rotate(180deg);
+}
