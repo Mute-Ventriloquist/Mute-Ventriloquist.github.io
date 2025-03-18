@@ -93,3 +93,28 @@ a.publication {
 a.publication:hover {
   text-decoration: underline;
 }
+
+/* Adjusting the size and layout of social links icons */
+
+.social-links {
+  display: flex; /* Use flexbox to align icons in a row */
+  justify-content: center; /* Center the icons */
+  gap: 10px; /* Add spacing between icons */
+}
+
+.social-links a {
+  font-size: 20px; /* Adjust icon size */
+  display: flex; /* Ensure proper alignment */
+  align-items: center; /* Vertically center the icons */
+  justify-content: center; /* Horizontally center the icons */
+  width: 10px; /* Set a fixed width for each icon */
+  height: 10px; /* Set a fixed height for each icon */
+  border-radius: 50%; /* Make the icons circular */
+  background-color: #1b4f91; /* Add a background color for better visibility */
+  color: white; /* Ensure the icons are visible */
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #2d6cc3; /* Change background color on hover */
+}
