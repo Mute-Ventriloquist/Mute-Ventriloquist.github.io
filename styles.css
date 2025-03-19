@@ -209,29 +209,30 @@ a.publication:hover {
 }
 
 .resume-btn {
-  display: flex; /* Use flexbox for icon and text alignment */
+  display: inline-flex; /* Use inline-flex for proper alignment */
   align-items: center; /* Vertically center content */
   justify-content: center; /* Horizontally center content */
-  margin: 20px 0;
-  padding: 8px 15px; /* Reduce padding */
-  background-color: #ff9800; /* Orange background */
+  margin: 5px 0; /* Reduce margin */
+  padding: 3px 6px; /* Smaller padding for reduced size */
+  background-color: #28a745; /* Green color */
   color: white !important; /* Ensure text color is white */
   text-align: center;
-  text-decoration: none; /* Remove underline */
-  border-radius: 25px; /* Rounded pill shape */
-  font-size: 14px; /* Reduce font size */
+  text-decoration: none !important; /* Remove underline */
+  border-radius: 6px; /* Adjusted rounded corners */
+  font-size: 9px; /* Smaller font size */
   font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: background-color 0.3s ease, transform 0.2s ease;
   border: none; /* Remove border */
 }
 
 .resume-btn i {
-  margin-right: 5px; /* Add spacing between icon and text */
-  font-size: 16px; /* Adjust icon size */
+  margin-right: 3px; /* Adjust spacing between icon and text */
+  font-size: 12px; /* Adjust icon size */
+  vertical-align: middle; /* Ensure icon aligns with text */
 }
 
 .resume-btn:hover {
-  background-color: #e68900; /* Darker orange on hover */
-  transform: translateY(-2px); /* Slight lift effect */
+  background-color: #218838; /* Darker green on hover */
+  transform: translateY(-1px); /* Slight lift effect */
 }
